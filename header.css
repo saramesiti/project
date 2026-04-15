@@ -100,3 +100,130 @@ body{
     font-size: 16px;
     cursor: pointer;
 } /*/generated*/
+
+.destinations {
+            font-family: Verdana, sans-serif;
+            text-align: center;
+            padding: 40px 30px;
+        }
+
+        .destinations h2 {
+            color: #45688b;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* card styling*/
+        .destination-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .dest-icon {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .dest-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1e3799;
+            margin: 15px 0;
+        }
+
+        .dest-rating {
+            font-size: 24px;
+            color: #f39c12;
+            margin: 10px 0;
+            letter-spacing: 3px;
+        }
+
+        /* Price and button container */
+        .price-container {
+            margin: 20px 0 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dest-price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #27ae60;
+            background: #eafaf1;
+            padding: 10px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .book-button {
+            background-color: #e67e22;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            display: none;
+            transition: 0.2s;
+        }
+
+        .book-button:hover {
+            background-color: #d35400;
+            transform: scale(1.05);
+        }
+
+        /* Navigation buttons */
+        .nav-buttons {
+            margin-top: 35px;
+            display: flex;
+            justify-content:center;
+            gap: 100px;
+        }
+
+        .nav-btn {
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-btn:disabled {
+            background-color: #83aecb;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .counter {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #7f8c8d;
+            font-family: Verdana, sans-serif;
+        }
+
+        .dropdown {
+            margin-top: 10px;
+        }

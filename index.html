@@ -13,7 +13,7 @@
             </div>
             <nav class="nav-menu">
                 <a href="#">Home</a>
-                <a href="#">Destination</a>
+                <a href="#destinations">Destination</a>
                 <a href="#">Packages</a>
                 <a href="#">Book</a>
             </nav>
@@ -29,6 +29,34 @@
             </div>
             <button id="show-all-destinations" align="center">Show all destinations</button>
         </section>
+
+
+
+         <section class="destinations" id="destinations">
+        <h2>Popular destinations</h2>
+
+        <div id="card-template">
+            <div id="dest-card">
+                <div id="dest-icon"></div>
+                <img class="dest-image" src="" alt="Destination" style="display: none;">
+                <div id="dest-name"></div>
+                <div id="dest-rating"></div>
+                <div id="price-container">
+                    <div id="dest-price"></div>
+                    <button class="book-button">Book</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="destinations-list">
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn" id="prev-btn" disabled>◀ Previous</button>
+            <button class="nav-btn" id="next-btn">Next ▶</button>
+        </div>
+        <div class="counter" id="counter"></div>
+    </section>
         
 
     </body>
