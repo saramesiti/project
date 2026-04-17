@@ -1,0 +1,92 @@
+table, th, td {
+    border: none;            
+    border-collapse: collapse; 
+    padding: 50px;           
+  }
+body{
+    background-color: rgba(205, 230, 246, 0.388);
+}
+table{
+    width:100%;
+    table-layout: fixed;
+    
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+    height: 350px;
+    object-fit: fill;
+}
+#package{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+#package td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+#package td div{
+    margin-top: 10px;
+}
+
+.title{
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    color: lightskyblue;
+    letter-spacing: 2px;
+    align-items: center;
+}
+.paris {
+    background-color: rgba(192, 227, 248, 0.753);
+    border-radius: 10%;
+}
+.bali{
+    background-color: rgba(192, 227, 248, 0.753);
+    border-radius: 10%;
+}
+.nyc{
+    background-color: rgba(192, 227, 248, 0.753);
+    border-radius: 10%;
+}
+.tokyo{
+    background-color: rgba(192, 227, 248, 0.753);
+    border-radius: 10%;
+}
+.rome{
+    background-color: rgba(192, 227, 248, 0.753);
+    border-radius: 10%;
+}
+.dubai{
+    background-color: rgba(192, 227, 248, 0.753);
+    border-radius: 10%;
+}
+.place{
+    color: rgb(94, 153, 172);
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+
+}
+.price{
+    background-color: rgba(94, 172, 159, 0.74);
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: rgb(13, 57, 49);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.price:hover{
+    background-color: rgba(41, 148, 214, 0.733);
+    color: rgb(1, 111, 180);
+
+}
+.price::after{
+    content: attr(data-price);
+}
+.price:hover::after{
+    content:"Book Now"
+}
