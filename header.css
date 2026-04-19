@@ -88,11 +88,10 @@ body{
     text-align: center;
     margin-top: 20px;
 }
-=======
+.book-now{
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-
 }
 .book-now button:hover {
     background-color: darkgoldenrod;
