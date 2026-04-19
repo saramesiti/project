@@ -1,13 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
    <head>
     <title>Five 7evens Agency</title>
     <link rel="stylesheet" href="bookingForm.css">
+    <link rel="stylesheet" href="header.css">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="bookingForm.js"></script>
 </head>
 
 <body>
+<header class="page-header">
+    <div class="myLogo">
+        <img src="logo.png" alt="Five 7evens logo">
+    </div>
+    <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="bookingForm.html">Create Booking</a>
+    </nav>
+</header>
 <section id="booking" class="booking">
     <div class="container">
         <h2 class="section-title">Book Your Adventure!</h2>
@@ -26,13 +38,16 @@
             </div>
             
             <div class="form-group">
-                <label>Destination *</label>
+                <label>Package *</label>
                 <select id="destination">
-                    <option value="">Choose a destination</option>
+                    <option value="">Choose a package</option>
                     <option value="paris">Paris, France</option>
                     <option value="bali">Bali, Indonesia</option>
                     <option value="nyc">New York, USA</option>
                     <option value="tokyo">Tokyo, Japan</option>
+                    <option value="rome">Rome, Italy</option>
+                    <option value="dubai">Dubai, UAE</option>
+
                 </select>
                 <span class="error-message" id="destination-error"></span>
             </div>

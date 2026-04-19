@@ -5,6 +5,7 @@ table, th, td {
   }
 body{
     background-color: rgba(205, 230, 246, 0.388);
+    padding-top: 130px;
 }
 table{
     width:100%;
@@ -13,7 +14,6 @@ table{
 }
 img{
     width: 100%;
-    border-radius: 50%;
     height: 350px;
     object-fit: fill;
 }
@@ -39,27 +39,27 @@ img{
 }
 .paris {
     background-color: rgba(192, 227, 248, 0.753);
-    border-radius: 10%;
+    border-radius: 5%;
 }
 .bali{
     background-color: rgba(192, 227, 248, 0.753);
-    border-radius: 10%;
+    border-radius: 5%;
 }
 .nyc{
     background-color: rgba(192, 227, 248, 0.753);
-    border-radius: 10%;
+    border-radius: 5%;
 }
 .tokyo{
     background-color: rgba(192, 227, 248, 0.753);
-    border-radius: 10%;
+    border-radius: 5%;
 }
 .rome{
     background-color: rgba(192, 227, 248, 0.753);
-    border-radius: 10%;
+    border-radius: 5%;
 }
 .dubai{
     background-color: rgba(192, 227, 248, 0.753);
-    border-radius: 10%;
+    border-radius: 5%;
 }
 .place{
     color: rgb(94, 153, 172);
@@ -88,5 +88,5 @@ img{
     content: attr(data-price);
 }
 .price:hover::after{
-    content:"Book Now"
+    content:"Learn more"
 }

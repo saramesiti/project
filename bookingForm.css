@@ -140,6 +140,7 @@ body {
     font-family: Georgia, serif;
     background: url("panorama.jpg") no-repeat center center fixed;
     background-size: cover;
+    padding-top: 130px;
 }
 
 
