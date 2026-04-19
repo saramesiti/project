@@ -1,4 +1,3 @@
-
  $(document).ready(function() {
     function showWelcomeAlert() {
         alert("Welcome to Five 7evens Agency!");
