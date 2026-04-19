@@ -59,7 +59,7 @@ $(document).ready(function () {
             isValid = false;
         }
 
-        // SAVE
+        // Save
         if (isValid) {
 
             let booking = {
@@ -81,7 +81,7 @@ setTimeout(function () {
     $('#form-message').fadeOut();
 }, 1000);
 
-$('#form-message').show(); // make sure it's visible again
+$('#form-message').show(); 
 
 
             $('#booking-form')[0].reset();
@@ -118,7 +118,7 @@ $('#form-message').show(); // make sure it's visible again
     }
 
 
-    // Delete booking (IMPORTANT: event delegation)
+    // Delete 
    $(document).on('click', '.delete-btn', function () {
     let id = $(this).data('id');
     let confirmDelete = confirm("Are you sure you want to delete this booking?");
