@@ -2,6 +2,30 @@ $(document).ready(function () {
 
     loadBookings();
 
+
+    //date validation on change
+        $('#date').on('change input blur', function() {
+        const dateValue = $(this).val();
+
+        if (!dateValue) {
+            $('#date-error').text('');
+            $(this).removeClass('error-input');
+            return;
+        }
+
+        const selectedDate = new Date(dateValue);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        if (selectedDate < today) {
+            $('#date-error').text('Date cannot be in the past!');
+            $(this).addClass('error-input');
+        } else {
+            $('#date-error').text('');
+            $(this).removeClass('error-input');
+        }
+    });
+
     // Submit form
     $('#booking-form').submit(function (e) {
         e.preventDefault();
@@ -39,16 +63,16 @@ $(document).ready(function () {
         }
 
         // Date
-        if (date === '') {
+      if (date === '') {
             $('#date-error').text('Select a date');
             isValid = false;
         } else {
-            let selectedDate = new Date(date);
-            let today = new Date();
+            const selectedDate = new Date(date);
+            const today = new Date();
             today.setHours(0,0,0,0);
 
             if (selectedDate < today) {
-                $('#date-error').text('Date cannot be in the past');
+                $('#date-error').text('Date cannot be in the past!');
                 isValid = false;
             }
         }
