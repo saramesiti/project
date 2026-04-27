@@ -138,7 +138,7 @@ html {
 body {
     margin: 0;
     font-family: Georgia, serif;
-    background: url("/picture/panorama.jpg") no-repeat center center fixed;
+    background-image: url("/project/picture/panorama.jpg") no-repeat center center fixed;
     background-size: cover;
     padding-top: 130px;
 }
