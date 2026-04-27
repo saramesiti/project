@@ -42,7 +42,7 @@ body{
     display: block;
 }
 .welcome {
-    background-image: url('picture/panorama.jpg');
+    background-image: url('../picture/panorama.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
